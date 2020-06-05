@@ -73,7 +73,8 @@ function draw(){
 
 function mouseDragged(){
     if (gameState!=="launched"){
-        Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
+         bird.trajectory = [];
+        Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY}); 
     }
 }
 
